@@ -4,7 +4,7 @@ This is an exploration of Python metaclasses using the Borg pattern
 (and stretching the analogy in ways it wasn't meant to be stretched).
 
 Each exploration contains a short demo that can be run as the module's
-*'__main__'*. This project contains the following sets of code:
+*'\__main\__'*. This project contains the following sets of code:
 
 ## Highlander
 
