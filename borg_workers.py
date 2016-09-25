@@ -2,7 +2,9 @@
 J Leadbetter <jleadbet@gmail.com>
 MIT License
 
-
+An exploration of multiple levels of shared attributes. In this case, the
+WorkerBorg retains both shared attributes with the collective and shared
+attributes with its unit. It also knows its own number within the unit.
 """
 
 from __future__ import print_function
