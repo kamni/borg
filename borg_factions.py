@@ -45,7 +45,7 @@ class FactionedBorg(object):
 
 
 if __name__ == '__main__':
-    borg1 = FactionedBorg('Original', 'You will be assimilated.')
+    borg1 = FactionedBorg('Delta Quadrant', 'You will be assimilated.')
     borg2 = FactionedBorg('Hue', 'We are Hue.')
     borg3 = FactionedBorg('Locutus', 'Make it so.')
 
