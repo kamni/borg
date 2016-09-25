@@ -2,8 +2,7 @@
 J Leadbetter <jleadbet@gmail.com>
 MIT License
 
-An exploration of Python metaclasses using the Borg pattern. Except these Borg
-are Highlanders.
+An exploration of Python Borg pattern. Except these Borg are Highlanders.
 """
 
 from __future__ import print_function
