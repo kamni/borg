@@ -18,8 +18,8 @@ class FactionedBorg(object):
         super(FactionedBorg, self).__init__()
 
         tmp_others = list(self.__others__)
+        self.faction = faction
         try:
-            self.faction = faction
             faction_member = tmp_others.pop(tmp_others.index(self))
             self.__dict__ = faction_member.__dict__
 
@@ -27,7 +27,6 @@ class FactionedBorg(object):
             self.slogan = slogan
         except ValueError:
             # We have a lone Borg. Create a new faction.
-            self.faction = faction
             self.slogan = slogan
             self.__others__.add(self)
 
