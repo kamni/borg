@@ -26,6 +26,16 @@ class ThereCanBeOnlyOne(object):
         return '{} is an immortal.'.format(self.name)
 
 
+class ImmortalsCantHaveChildren(ThereCanBeOnlyOne):
+    """
+    Traditional Borg classes inherit parents' dictionaries.
+
+    See `borg_children.py` for an implementation where they can.
+    """
+
+    pass
+
+
 if __name__ == '__main__':
     highlander1 = ThereCanBeOnlyOne('Victor Kurgan', 'Osta Vasilek')
 
@@ -36,5 +46,12 @@ if __name__ == '__main__':
     highlander2 = ThereCanBeOnlyOne('Connor MacLeod', 'The Kurgan')
 
     print("We see that there can only be one.")
+    print(highlander1)
+    print(highlander1.has_beheaded())
+
+    highlander3 = ImmortalsCantHaveChildren(
+        'Russell Edwin Nash', 'General Katana'
+    )
+    print("Immortals can't truly have children...(and probably shouldn't)")
     print(highlander1)
     print(highlander1.has_beheaded())

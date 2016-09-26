@@ -40,6 +40,8 @@ class FactionedBorg(object):
         return "We are the {} Borg. {}".format(self.faction, self.slogan)
 
     def assimilate(self, other_lifeform):
+        """Turn the other lifeform into a Borg"""
+
         other_lifeform.__dict__ = self.__dict__
 
 
