@@ -29,6 +29,12 @@ their data back to the hive mind.
 
 ## Borg Children
 
-The borg have decided to have progeny, but unlike most parents, they
+The Borg have decided to have progeny, but unlike most parents, they
 want their children to have minds of their own (while still sharing a
 collective mind with others in their birth group, of course).
+
+## Threaded borg
+
+The Borg are a huge collective, and they might have millions of updates
+to their state at any given moment. Let's make sure they keep an
+accurate count of how many people they've assimilated.
