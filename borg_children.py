@@ -1,5 +1,5 @@
 """
-J Leadbetter <jleadbet@gmail.com>
+J Leadbetter <j@jleadbetter.com>
 MIT License
 
 Typically children of Borg classes still maintain their parents' attributes,
@@ -8,10 +8,8 @@ we'll show that it's possible to have Borg classes that share a class base
 without sharing attributes.
 """
 
-from __future__ import print_function
 
-
-class TotalBorgOldGen(object):
+class TotalBorgOldGen:
     """
     Variation on the FactionedBorg that uses class to determine uniqueness.
 
@@ -48,12 +46,9 @@ class TotalBorgOldGen(object):
 
         self_attrs = dir(self)
         for attr in dir(other_lifeform):
-            try:
-                # ignore dunderscore attributes
-                if not (attr.startswith('__') or attr in self_attrs):
-                    setattr(self, attr, getattr(other_lifeform, attr))
-            except:
-                import pdb; pdb.set_trace()
+            # ignore dunderscore attributes
+            if not (attr.startswith('__') or attr in self_attrs):
+                setattr(self, attr, getattr(other_lifeform, attr))
 
         for attr in self_attrs:
             try:
@@ -71,7 +66,7 @@ class TotalBorgNextGen(TotalBorgOldGen):
     pass
 
 
-class FederationOfficer(object):
+class FederationOfficer:
     """A class that exists solely to be assimilated by the Borg"""
 
     def __init__(self, name, rank, ship):

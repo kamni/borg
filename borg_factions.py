@@ -1,15 +1,13 @@
 """
-J Leadbetter <jleadbet@gmail.com>
+J Leadbetter <j@jleadbetter.com>
 MIT License
 
 The Borg have had a schism, and now understand the concept of 'faction'. Borg
 only share knowledge with members of the same faction.
 """
 
-from __future__ import print_function
 
-
-class FactionedBorg(object):
+class FactionedBorg:
     """Borg implementation that only shares attributes with faction members"""
 
     __others__ = set()

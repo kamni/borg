@@ -1,14 +1,12 @@
 """
-J Leadbetter <jleadbet@gmail.com>
+J Leadbetter <j@jleadbetter.com>
 MIT License
 
 An exploration of Python Borg pattern. Except these Borg are Highlanders.
 """
 
-from __future__ import print_function
 
-
-class ThereCanBeOnlyOne(object):
+class ThereCanBeOnlyOne:
     """Implementation of the traditional Python Borg pattern"""
 
     __shared__ = {}

@@ -1,5 +1,5 @@
 """
-J Leadbetter <jleadbet@gmail.com>
+J Leadbetter <j@jleadbetter.com>
 MIT License
 
 An exploration of multiple levels of shared attributes. In this case, the
@@ -7,10 +7,8 @@ WorkerBorg retains both shared attributes with the collective and shared
 attributes with its unit. It also knows its own number within the unit.
 """
 
-from __future__ import print_function
 
-
-class WorkerBorg(object):
+class WorkerBorg:
     """
     Borg class with distinct shared attributes between collective and unit.
 
