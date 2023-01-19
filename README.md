@@ -33,8 +33,14 @@ The Borg have decided to have progeny, but unlike most parents, they
 want their children to have minds of their own (while still sharing a
 collective mind with others in their birth group, of course).
 
-## Threaded borg
+## Threaded Borg
 
 The Borg are a huge collective, and they might have millions of updates
 to their state at any given moment. Let's make sure they keep an
 accurate count of how many people they've assimilated.
+
+## Unstoppable Borg
+
+The Borg have technologically advanced and have access to the fabric of
+spacetime. Now they can assimilate everything in the known universe, even
+if they exist in other time periods.
